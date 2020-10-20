@@ -4,6 +4,8 @@ const bodyParser = require("body-parser");
 // conecção com o banco de dados , para funcionar descomente no arquivo /database/database.js
 //const connection = require("./database/database");
 //const Pergunta = require("./database/Pergunta.js");
+//const Resposta = require("./database/Resposta.js");
+
 
 //connection
  //   .autenticate()
@@ -54,6 +56,23 @@ app.post("/salvarpergunta",(req,res)=>{
       res.redirect("/");
    });
    */
+});
+
+
+app.get("/pergunta/:id",(req,res)=>{
+   var id = req.params.id;
+   Pergunta.findOne({
+      where: {id: id}
+   }).then(pergunta =>{
+      if(pergunta!=undefined){ // pergunta encontrada
+            res.render("pergunta",{
+               pergunta: pergunta
+            });
+
+      }else{ //nao encontrada
+         res.redirect("/");
+      }
+   });
 });
 
 
