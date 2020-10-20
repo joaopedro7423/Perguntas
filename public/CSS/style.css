@@ -1,0 +1,16 @@
+body{
+
+    background-color: antiquewhite;
+}
+
+/* por classe */
+img.tamb{
+width: 60px;
+border-radius: 50%;
+}
+
+/* por id */
+#formulario-pergunta{
+
+    margin-top: 5vh;
+    }
