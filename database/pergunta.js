@@ -1,10 +1,10 @@
 
 // documento para gerar a tabela
 
-const { Sequelize } = require("sequelize/types");
+//const { Sequelize } = require("sequelize/types");
 
 const Sequelize = require('sequelize');
-const connection = require("./database/database");
+const connection = require("./database");
 
 
 const Pergunta = connection.define('pergunta',{

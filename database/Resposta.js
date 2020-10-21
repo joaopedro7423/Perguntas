@@ -1,6 +1,6 @@
 
 const Sequelize = require('sequelize');
-const connection = require("./database/database");
+const connection = require("./database");
 
 const Resposta = connection.define("resposta",{
     corpo: {
