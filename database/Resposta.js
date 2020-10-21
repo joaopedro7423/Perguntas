@@ -1,13 +1,13 @@
-/*
+
 const Sequelize = require('sequelize');
 const connection = require("./database/database");
 
 const Resposta = connection.define("resposta",{
-    corpo{
+    corpo: {
         type: Sequelize.TEXT,
         allowNull: false
     },
-    perguntaId{
+    perguntaId: {
         type: Sequelize.INTEGER,
         allowNull: false
     }
@@ -17,4 +17,3 @@ const Resposta = connection.define("resposta",{
 Resposta.sync({force:false});
 
 module.exports = Resposta;
-*/

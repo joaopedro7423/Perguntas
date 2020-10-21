@@ -1,4 +1,4 @@
-/*
+
 // documento para gerar a tabela
 
 const { Sequelize } = require("sequelize/types");
@@ -21,4 +21,3 @@ const Pergunta = connection.define('pergunta',{
 Pergunta.sync({force:false}).then(()=>{});
 
 module.exports = Pergunta;
-*/
